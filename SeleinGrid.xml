@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke" verbose="1" parallel="tests" thread-count="1">
+    <test name="moto-g">
+        <classes>
+            <class name="Tests.LoginTest" />
+
+            <parameter name="port" value="4726"></parameter>
+            <parameter name="device" value="phone"></parameter>
+            <parameter name="platform_name" value="Android"></parameter>
+            <parameter name="platform_version" value="5.1"></parameter>
+        </classes>
+    </test>
+
+    <!--<test name="GalaxyS4">
+    <classes>
+    <class name="com.cablevision.cas.adc.androidphone.LoginModule.LoginTest" />
+
+    <parameter name="port" value="4724"></parameter>
+    <parameter name="device" value="phone"></parameter>
+    <parameter name="platform_name" value="Android"></parameter>
+    <parameter name="platform_version" value="4.4.2"></parameter>
+    </classes>
+    </test>-->
+
+</suite>
