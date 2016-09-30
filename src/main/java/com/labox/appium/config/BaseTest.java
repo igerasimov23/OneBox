@@ -17,7 +17,7 @@ public abstract class BaseTest {
     public static void startServer(){
 
         try {
-            String[] command = {"cmd.exe", "/C", "Start", "C:\\IdeaProjects\\OneBoxAppium\\server-run1.bat"};
+            String[] command = {"cmd.exe", "/C", "Start", "C:\\IdeaProjects\\OneBoxAppium\\Devices\\server-run1.bat"};
             Process p =  Runtime.getRuntime().exec(command);
             Thread.sleep(5000);
         } catch (IOException ex) {
@@ -57,11 +57,13 @@ public abstract class BaseTest {
         command.addArgument("/c");
         command.addArgument("appium");
         command.addArgument("--nodeconfig");
-        command.addArgument("c:\\IdeaProjects\\OneBoxAppium\\motog.json");
+        command.addArgument("c:\\IdeaProjects\\OneBoxAppium\\Devices\\motog.json");
         command.addArgument("-p");
         command.addArgument("4726");
         command.addArgument("-U");
         command.addArgument("TA9190143I");
+        command.addArgument("--log");
+        command.addArgument("c:\\IdeaProjects\\OneBoxAppium\\Devices\\motog.txt");
 
         DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
         DefaultExecutor executor = new DefaultExecutor();
@@ -150,6 +152,6 @@ public abstract class BaseTest {
     @AfterClass
     public  void afterClass() throws IOException {
         app.driver.closeApp();
-        stopNode();
+//        stopNode();
     }
 }
