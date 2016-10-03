@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeSuite]" parallel="tests">
+  <parameter name="platform_version" value="6.0.1"/>
+  <parameter name="port" value="4727"/>
+  <parameter name="platform_name" value="Android"/>
+  <parameter name="device" value="e552347a"/>
+  <test name="moto-g">
+    <parameter name="platform_version" value="5.1"/>
+    <parameter name="port" value="4725"/>
+    <parameter name="platform_name" value="Android"/>
+    <parameter name="device" value="TA9190143I"/>
+    <classes>
+      <class name="com.labox.appium.NOFactory.LoginTest"/>
+    </classes>
+  </test> <!-- moto-g -->
+  <test name="GalaxyS7">
+    <parameter name="platform_version" value="6.0.1"/>
+    <parameter name="port" value="4727"/>
+    <parameter name="platform_name" value="Android"/>
+    <parameter name="device" value="e552347a"/>
+    <classes>
+      <class name="com.labox.appium.NOFactory.LoginTest"/>
+    </classes>
+  </test> <!-- GalaxyS7 -->
+</suite> <!-- Failed suite [SmokeSuite] -->

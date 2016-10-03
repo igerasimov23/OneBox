@@ -1,0 +1,1 @@
+appium -a 127.0.0.1 -p 4729 --bootstrap-port 5003 -U 192.168.56.101:5555 --nodeconfig Nexus.json

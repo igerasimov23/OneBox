@@ -1,15 +1,39 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Smoke" verbose="1" parallel="tests" thread-count="1">
-    <test name="moto-g">
+<suite name="Smoke" verbose="1" parallel="tests" thread-count="5">
+
+        <test name="moto-g">
+            <classes>
+                <class name="Tests.LoginTest" />
+
+                <parameter name="port" value="4725"></parameter>
+                <parameter name="device" value="TA9190143I"></parameter>
+                <parameter name="platform_name" value="Android"></parameter>
+                <parameter name="platform_version" value="5.1"></parameter>
+            </classes>
+        </test>
+
+        <!--<test name="GalaxyS7">-->
+            <!--<classes>-->
+                <!--<class name="Tests.LoginTest" />-->
+
+                <!--<parameter name="port" value="4727"></parameter>-->
+                <!--<parameter name="device" value="192.168.1.146:5555"></parameter>-->
+                <!--<parameter name="platform_name" value="Android"></parameter>-->
+                <!--<parameter name="platform_version" value="6.0.1"></parameter>-->
+            <!--</classes>-->
+        <!--</test>-->
+
+    <test name="Nexus">
         <classes>
             <class name="Tests.LoginTest" />
 
-            <parameter name="port" value="4726"></parameter>
-            <parameter name="device" value="phone"></parameter>
+            <parameter name="port" value="4729"></parameter>
+            <parameter name="device" value="192.168.56.101:5555"></parameter>
             <parameter name="platform_name" value="Android"></parameter>
             <parameter name="platform_version" value="5.1"></parameter>
         </classes>
     </test>
+
 
     <!--<test name="GalaxyS4">
     <classes>

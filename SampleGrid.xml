@@ -1,0 +1,31 @@
+<suite name="SmokeSuite" verbose="1" parallel="tests" thread-count="5">
+
+    <tests>
+        <test name="moto-g">
+            <classes>
+                <class name="com.labox.appium.NOFactory.LoginTest" />
+
+                <parameter name="port" value="4725"></parameter>
+                <parameter name="device" value="TA9190143I"></parameter>
+                <parameter name="platform_name" value="Android"></parameter>
+                <parameter name="platform_version" value="5.1"></parameter>
+            </classes>
+        </test>
+
+        <test name="GalaxyS7">
+            <classes>
+                <class name="com.labox.appium.NOFactory.LoginTest" />
+
+
+                <parameter name="port" value="4727"></parameter>
+                <parameter name="device" value="e552347a"></parameter>
+                <parameter name="platform_name" value="Android"></parameter>
+                <parameter name="platform_version" value="6.0.1"></parameter>
+            </classes>
+        </test>
+
+    </tests>
+
+
+
+</suite>

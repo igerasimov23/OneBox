@@ -12,12 +12,12 @@ import java.net.MalformedURLException;
 
 public abstract class BaseTest {
 
-    public static ApplicationManager app;
+    public ApplicationManager app;
 
     public static void startServer(){
 
         try {
-            String[] command = {"cmd.exe", "/C", "Start", "C:\\IdeaProjects\\OneBoxAppium\\Devices\\server-run1.bat"};
+            String[] command = {"cmd.exe", "/C", "Start", "Devices/server-run1.bat"};
             Process p =  Runtime.getRuntime().exec(command);
             Thread.sleep(5000);
         } catch (IOException ex) {
@@ -57,13 +57,13 @@ public abstract class BaseTest {
         command.addArgument("/c");
         command.addArgument("appium");
         command.addArgument("--nodeconfig");
-        command.addArgument("c:\\IdeaProjects\\OneBoxAppium\\Devices\\motog.json");
+        command.addArgument("Devices/motog.json");
         command.addArgument("-p");
         command.addArgument("4726");
         command.addArgument("-U");
         command.addArgument("TA9190143I");
         command.addArgument("--log");
-        command.addArgument("c:\\IdeaProjects\\OneBoxAppium\\Devices\\motog.txt");
+        command.addArgument("Devices/motog.txt");
 
         DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
         DefaultExecutor executor = new DefaultExecutor();
@@ -123,6 +123,35 @@ public abstract class BaseTest {
 //        }
     }
 
+    public static void startNode2() {
+
+        CommandLine command = new CommandLine("cmd");
+        command.addArgument("/c");
+        command.addArgument("appium");
+        command.addArgument("--nodeconfig");
+        command.addArgument("Devices/galaxys7.json");
+        command.addArgument("-p");
+        command.addArgument("4725");
+        command.addArgument("-U");
+        command.addArgument("e552347a");
+        command.addArgument("--log");
+        command.addArgument("Devices/galaxys7.txt");
+
+        DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
+        DefaultExecutor executor = new DefaultExecutor();
+        executor.setExitValue(1);
+
+        try {
+            executor.execute(command, resultHandler);
+            Thread.sleep(15000);
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void stopNode() throws IOException {
         CommandLine command = new CommandLine("cmd");
         command.addArgument("/c");
@@ -138,20 +167,22 @@ public abstract class BaseTest {
     }
 
 
-    @BeforeClass
-    @Parameters({ "device", "platform_name", "platform_version"})
-    public static void beforeTest(String device,
+    @BeforeClass(alwaysRun=true)
+    @Parameters({"port", "device", "platform_name", "platform_version"})
+    public  void beforeTest(String port, String device,
                                   String platform_name, String platform_version) throws MalformedURLException {
-        startServer();
-        startNode1();
-        app = new ApplicationManager(device,
+//        startServer();
+//        startNode1();
+//        startNode2();
+        app = new ApplicationManager(port, device,
                 platform_name,  platform_version);
     }
 
 
     @AfterClass
     public  void afterClass() throws IOException {
-        app.driver.closeApp();
+//        app.driver.quit();
 //        stopNode();
+        app.exit();
     }
 }

@@ -1,0 +1,1 @@
+appium -a 127.0.0.1 -p 4727 --bootstrap-port 5053 -U 192.168.1.146:5555 --nodeconfig galaxys7.json
