@@ -12,6 +12,17 @@
             </classes>
         </test>
 
+    <test name="iphone">
+        <classes>
+            <class name="Tests.LoginTest" />
+
+            <parameter name="port" value="4730"></parameter>
+            <parameter name="device" value="iPhone6"></parameter>
+            <parameter name="platform_name" value="iOS"></parameter>
+            <parameter name="platform_version" value="8.1.2"></parameter>
+        </classes>
+    </test>
+
         <!--<test name="GalaxyS7">-->
             <!--<classes>-->
                 <!--<class name="Tests.LoginTest" />-->
@@ -23,16 +34,16 @@
             <!--</classes>-->
         <!--</test>-->
 
-    <test name="Nexus">
-        <classes>
-            <class name="Tests.LoginTest" />
+    <!--<test name="Nexus">-->
+        <!--<classes>-->
+            <!--<class name="Tests.LoginTest" />-->
 
-            <parameter name="port" value="4729"></parameter>
-            <parameter name="device" value="192.168.56.101:5555"></parameter>
-            <parameter name="platform_name" value="Android"></parameter>
-            <parameter name="platform_version" value="5.1"></parameter>
-        </classes>
-    </test>
+            <!--<parameter name="port" value="4729"></parameter>-->
+            <!--<parameter name="device" value="192.168.56.101:5555"></parameter>-->
+            <!--<parameter name="platform_name" value="Android"></parameter>-->
+            <!--<parameter name="platform_version" value="5.1"></parameter>-->
+        <!--</classes>-->
+    <!--</test>-->
 
 
     <!--<test name="GalaxyS4">

@@ -4,6 +4,7 @@ import com.labox.appium.config.ApplicationManager;
 import com.labox.appium.config.HelperBase;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 public class LoginPage extends HelperBase {
     public LoginPage(ApplicationManager manager) {
@@ -13,9 +14,11 @@ public class LoginPage extends HelperBase {
     }
 
     @AndroidFindBy(id = "com.optimum.rdvr.mobile:id/userId_text")
+    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATextField[1]")
     public MobileElement username;
 
     @AndroidFindBy(id = "com.optimum.rdvr.mobile:id/password_text")
+    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIASecureTextField[1]")
     public MobileElement password;
 
     @AndroidFindBy(id = "com.optimum.rdvr.mobile:id/signin")
@@ -27,8 +30,8 @@ public class LoginPage extends HelperBase {
         username.sendKeys(user);
         password.click();
         password.sendKeys(passw);
-        driver.navigate().back();
-        btnSignIn.click();
+//        driver.navigate().back();
+//        btnSignIn.click();
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

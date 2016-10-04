@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke]" parallel="tests">
-  <parameter name="platform_version" value="5.1"/>
-  <parameter name="port" value="4729"/>
-  <parameter name="platform_name" value="Android"/>
-  <parameter name="device" value="192.168.56.101:5555"/>
+  <parameter name="platform_version" value="8.1.2"/>
+  <parameter name="port" value="4730"/>
+  <parameter name="platform_name" value="iOS"/>
+  <parameter name="device" value="iPhone6"/>
   <test name="moto-g">
     <parameter name="platform_version" value="5.1"/>
     <parameter name="port" value="4725"/>
@@ -14,30 +14,43 @@
       <class name="Tests.LoginTest"/>
     </classes>
   </test> <!-- moto-g -->
-  <test name="Nexus">
-    <parameter name="platform_version" value="5.1"/>
-    <parameter name="port" value="4729"/>
-    <parameter name="platform_name" value="Android"/>
-    <parameter name="device" value="192.168.56.101:5555"/>
+  <test name="iphone">
+    <parameter name="platform_version" value="8.1.2"/>
+    <parameter name="port" value="4730"/>
+    <parameter name="platform_name" value="iOS"/>
+    <parameter name="device" value="iPhone6"/>
     <classes>
       <class name="Tests.LoginTest"/>
     </classes>
-  </test> <!-- Nexus -->
-  <test name="Nexus(failed)" parallel="tests">
-    <parameter name="platform_version" value="5.1"/>
-    <parameter name="port" value="4729"/>
-    <parameter name="platform_name" value="Android"/>
-    <parameter name="device" value="192.168.56.101:5555"/>
+  </test> <!-- iphone -->
+  <test name="iphone(failed)" parallel="tests">
+    <parameter name="platform_version" value="8.1.2"/>
+    <parameter name="port" value="4730"/>
+    <parameter name="platform_name" value="iOS"/>
+    <parameter name="device" value="iPhone6"/>
     <classes>
       <class name="Tests.LoginTest">
         <methods>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
           <include name="logintest"/>
-          <include name="afterClass"/>
-          <include name="afterClass"/>
         </methods>
       </class> <!-- Tests.LoginTest -->
     </classes>
-  </test> <!-- Nexus(failed) -->
+  </test> <!-- iphone(failed) -->
+  <test name="moto-g(failed)" parallel="tests">
+    <parameter name="platform_version" value="5.1"/>
+    <parameter name="port" value="4725"/>
+    <parameter name="platform_name" value="Android"/>
+    <parameter name="device" value="TA9190143I"/>
+    <classes>
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+    </classes>
+  </test> <!-- moto-g(failed) -->
 </suite> <!-- Failed suite [Smoke] -->

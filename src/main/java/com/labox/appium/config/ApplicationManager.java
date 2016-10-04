@@ -4,9 +4,11 @@ import com.labox.appium.pages.LoginPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -32,16 +34,42 @@ public class ApplicationManager {
         this.platform_version = platform_version;
 
 
-        String fileLocation = "C:/cablevision/optimum4.6.0.1_arm_stg2.apk";
+        String fileLocationAndr = "/Users/ilyagerasimov/Downloads/optimum4.6.0.1_arm_stg2.apk";
+        String fileLocationIos = "/Users/ilyagerasimov/Library/Developer/Xcode/DerivedData/UnityApp-delehfqpynmvfzbdnenbcrybjkwy/Build/Products/Debug-iphoneos/CVCrDVR.app";
+
+        File andrPath = new File(fileLocationAndr);
+        File iosPath = new File(fileLocationIos);
+
          capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
-        capabilities.setCapability(MobileCapabilityType.APP, fileLocation);
+
+        if(platform_name.equalsIgnoreCase("ios")){
+            System.out.println("ios: " + platform_name + " " + device + " " + platform_version);
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
+            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+            capabilities.setCapability(MobileCapabilityType.APP, iosPath.getAbsolutePath());
+            System.out.println(iosPath.getAbsolutePath());
+            driver = new IOSDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities);
+
+        }
+        else if (platform_name.equalsIgnoreCase("android")){
+            System.out.println("android: " + platform_name + " " + device + " " + platform_version);
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
+            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+            capabilities.setCapability(MobileCapabilityType.APP, andrPath.getAbsolutePath());
         capabilities.setCapability("appPackage", "com.optimum.rdvr.mobile");
-        //Activity to open Log In screen for Android
+//        //Activity to open Log In screen for Android
         capabilities.setCapability("appActivity", "com.cablevision.optimum2.utility.SplashScreen");
-        driver = new AndroidDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities);
+            driver = new AndroidDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities);
+
+        }
+//
+
+
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 
