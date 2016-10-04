@@ -2,18 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke]" parallel="tests">
   <parameter name="platform_version" value="8.1.2"/>
-  <parameter name="port" value="4730"/>
+  <parameter name="port" value="4735"/>
   <parameter name="platform_name" value="iOS"/>
-  <parameter name="device" value="iPhone6"/>
-  <test name="moto-g">
-    <parameter name="platform_version" value="5.1"/>
-    <parameter name="port" value="4725"/>
-    <parameter name="platform_name" value="Android"/>
-    <parameter name="device" value="TA9190143I"/>
-    <classes>
-      <class name="Tests.LoginTest"/>
-    </classes>
-  </test> <!-- moto-g -->
+  <parameter name="device" value="ipod"/>
   <test name="iphone">
     <parameter name="platform_version" value="8.1.2"/>
     <parameter name="port" value="4730"/>
@@ -23,34 +14,13 @@
       <class name="Tests.LoginTest"/>
     </classes>
   </test> <!-- iphone -->
-  <test name="iphone(failed)" parallel="tests">
+  <test name="ipod">
     <parameter name="platform_version" value="8.1.2"/>
-    <parameter name="port" value="4730"/>
+    <parameter name="port" value="4735"/>
     <parameter name="platform_name" value="iOS"/>
-    <parameter name="device" value="iPhone6"/>
+    <parameter name="device" value="ipod"/>
     <classes>
-      <class name="Tests.LoginTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-          <include name="logintest"/>
-        </methods>
-      </class> <!-- Tests.LoginTest -->
+      <class name="Tests.LoginTest"/>
     </classes>
-  </test> <!-- iphone(failed) -->
-  <test name="moto-g(failed)" parallel="tests">
-    <parameter name="platform_version" value="5.1"/>
-    <parameter name="port" value="4725"/>
-    <parameter name="platform_name" value="Android"/>
-    <parameter name="device" value="TA9190143I"/>
-    <classes>
-      <class name="Tests.LoginTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-          <include name="logintest"/>
-        </methods>
-      </class> <!-- Tests.LoginTest -->
-    </classes>
-  </test> <!-- moto-g(failed) -->
+  </test> <!-- ipod -->
 </suite> <!-- Failed suite [Smoke] -->

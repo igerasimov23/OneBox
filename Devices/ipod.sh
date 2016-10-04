@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+appium -a 127.0.0.1 -p 4735 --bootstrap-port 4736 -U f9b8f0d27d5c07b0037a0c6f71046f5ad79b7f77 --nodeconfig /Users/ilyagerasimov/IdeaProjects/OneBox/Devices/ipod.json --tmp /Users/ilyagerasimov/Documents/tmp/dev

@@ -14,11 +14,11 @@ public class LoginPage extends HelperBase {
     }
 
     @AndroidFindBy(id = "com.optimum.rdvr.mobile:id/userId_text")
-    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIATextField[1]")
+    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[1]/UIATextField[1]")
     public MobileElement username;
 
     @AndroidFindBy(id = "com.optimum.rdvr.mobile:id/password_text")
-    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIASecureTextField[1]")
+    @iOSFindBy(xpath = "//UIAApplication[1]/UIAWindow[1]/UIASecureTextField[1]")
     public MobileElement password;
 
     @AndroidFindBy(id = "com.optimum.rdvr.mobile:id/signin")

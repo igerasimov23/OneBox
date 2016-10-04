@@ -22,7 +22,8 @@ public class ApplicationManager {
     public String platform_name;
     public String platform_version;
 
-    public static DesiredCapabilities capabilities;
+    public  DesiredCapabilities capabilities;
+    public  DesiredCapabilities capabilities1;
 
 
 
@@ -35,17 +36,18 @@ public class ApplicationManager {
 
 
         String fileLocationAndr = "/Users/ilyagerasimov/Downloads/optimum4.6.0.1_arm_stg2.apk";
-        String fileLocationIos = "/Users/ilyagerasimov/Library/Developer/Xcode/DerivedData/UnityApp-delehfqpynmvfzbdnenbcrybjkwy/Build/Products/Debug-iphoneos/CVCrDVR.app";
+        String fileLocationIos = "/Users/ilyagerasimov/builds/LaBoxApp.app";
 
         File andrPath = new File(fileLocationAndr);
         File iosPath = new File(fileLocationIos);
 
-         capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 
-        if(platform_name.equalsIgnoreCase("ios")){
+//        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
+//        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
+//        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+
+        if(platform_name.equalsIgnoreCase("iOS")){
+            capabilities = new DesiredCapabilities();
             System.out.println("ios: " + platform_name + " " + device + " " + platform_version);
             capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
             capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
@@ -56,15 +58,16 @@ public class ApplicationManager {
 
         }
         else if (platform_name.equalsIgnoreCase("android")){
+            capabilities1 = new DesiredCapabilities();
             System.out.println("android: " + platform_name + " " + device + " " + platform_version);
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
-            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
-            capabilities.setCapability(MobileCapabilityType.APP, andrPath.getAbsolutePath());
-        capabilities.setCapability("appPackage", "com.optimum.rdvr.mobile");
+            capabilities1.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
+            capabilities1.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
+            capabilities1.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+            capabilities1.setCapability(MobileCapabilityType.APP, andrPath.getAbsolutePath());
+        capabilities1.setCapability("appPackage", "com.optimum.rdvr.mobile");
 //        //Activity to open Log In screen for Android
-        capabilities.setCapability("appActivity", "com.cablevision.optimum2.utility.SplashScreen");
-            driver = new AndroidDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities);
+        capabilities1.setCapability("appActivity", "com.cablevision.optimum2.utility.SplashScreen");
+            driver = new AndroidDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities1);
 
         }
 //

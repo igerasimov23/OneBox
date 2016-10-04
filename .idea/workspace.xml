@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b814d33d-bfd3-43ae-9c4a-1c7a7890bc54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Devices/ihone6.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Devices/iphone6.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Devices/server-run1.bat" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Devices/motog.bat" afterPath="$PROJECT_DIR$/Devices/motog.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Devices/ipod.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Devices/ipod.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/labox/appium/config/ApplicationManager.class" afterPath="$PROJECT_DIR$/target/classes/com/labox/appium/config/ApplicationManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/labox/appium/pages/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/com/labox/appium/pages/LoginPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleinGrid.xml" afterPath="$PROJECT_DIR$/SeleinGrid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/iphone.html" afterPath="$PROJECT_DIR$/test-output/Smoke/iphone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/iphone.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/iphone.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/moto-g.html" afterPath="$PROJECT_DIR$/test-output/Smoke/moto-g.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/moto-g.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/moto-g.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/testng-failed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/index.html" afterPath="$PROJECT_DIR$/test-output/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Tests.LoginTest.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Tests.LoginTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/iphone.properties" afterPath="$PROJECT_DIR$/test-output/old/Smoke/iphone.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/methods-alphabetical.html" afterPath="$PROJECT_DIR$/test-output/old/Smoke/methods-alphabetical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/methods.html" afterPath="$PROJECT_DIR$/test-output/old/Smoke/methods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/moto-g.properties" afterPath="$PROJECT_DIR$/test-output/old/Smoke/moto-g.properties" />
@@ -51,11 +50,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5781711">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+                <state relative-caret-position="212">
+                  <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
@@ -75,7 +74,7 @@
             <entry file="file://$PROJECT_DIR$/Devices/ihone6.sh">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="205" selection-start-line="1" selection-start-column="205" selection-end-line="1" selection-end-column="205" />
+                  <caret line="1" column="93" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="93" />
                   <folding />
                 </state>
               </provider>
@@ -85,7 +84,27 @@
             <entry file="file://$PROJECT_DIR$/Devices/iphone6.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="135">
-                  <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+                  <caret line="9" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ipod.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Devices/ipod.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ipod.sh" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Devices/ipod.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="210" selection-start-line="1" selection-start-column="210" selection-end-line="1" selection-end-column="210" />
                   <folding />
                 </state>
               </provider>
@@ -109,11 +128,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="galaxys7.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Devices/galaxys7.json">
+          <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+                <state relative-caret-position="149">
+                  <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -122,8 +141,8 @@
           <file leaf-file-name="motog.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Devices/motog.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -139,28 +158,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/Tests/LoginTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#224#225#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="galaxy7.bat" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Devices/galaxy7.bat">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -170,7 +167,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
                   <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#730#731#0" expanded="false" />
+                    <element signature="e#760#761#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -180,7 +181,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
                   <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#826#827#0" expanded="false" />
+                    <element signature="e#856#857#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -190,7 +195,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
                   <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#1671#1672#0" expanded="false" />
+                    <element signature="e#1700#1701#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -200,7 +209,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="90">
                   <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -208,8 +219,8 @@
           <file leaf-file-name="SeleinGrid.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SeleinGrid.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -289,12 +300,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/labox/appium/config/BaseTest.java" />
         <option value="$PROJECT_DIR$/Devices/Nexus.json" />
         <option value="$PROJECT_DIR$/Devices/Nexus.bat" />
-        <option value="$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/Devices/motog.sh" />
         <option value="$PROJECT_DIR$/Devices/iphone6.json" />
         <option value="$PROJECT_DIR$/Devices/ihone6.sh" />
+        <option value="$PROJECT_DIR$/Devices/ipod.json" />
         <option value="$PROJECT_DIR$/SeleinGrid.xml" />
+        <option value="$PROJECT_DIR$/Devices/ipod.sh" />
         <option value="$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java" />
       </list>
     </option>
   </component>
@@ -407,6 +420,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OneBoxAppium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OneBox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1173,44 +1216,44 @@
       <workItem from="1475509050686" duration="730000" />
       <workItem from="1475589621731" duration="1141000" />
       <workItem from="1475591043418" duration="163000" />
-      <workItem from="1475591266757" duration="6876000" />
+      <workItem from="1475591266757" duration="11346000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 17m 05s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 14h 34m 06s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 19m 01s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 14h 38m 27s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 20m 24s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 14h 42m 30s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 22m 57s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 14h 52m 58s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 29m 01s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 14h 56m 21s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 32m 08s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 14h 58m 39s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 34m 13s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 15h 09m 41s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 37m 10s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 15h 14m 15s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 39m 35s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 17h 03m 19s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 12h 48m 26s.xml">
+    <history-entry file="C__IdeaProjects_OneBoxAppium_SeleinGrid_xml - 2016.10.04 at 17h 04m 39s.xml">
       <configuration name="C:/IdeaProjects/OneBoxAppium/SeleinGrid.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92546000" />
+    <option name="totallyTimeSpent" value="97016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1268,15 +1311,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Runner.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1419,20 +1453,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#224#225#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1441,7 +1467,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#730#731#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,7 +1479,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#826#827#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1457,7 +1491,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#1700#1701#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1465,7 +1503,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1481,14 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Devices/motog.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1509,10 +1541,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Devices/server-run1.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Devices/motog.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="136" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Devices/motog.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Devices/iphone6.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="9" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeleinGrid.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Devices/ipod.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Devices/ipod.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="210" selection-start-line="1" selection-start-column="210" selection-end-line="1" selection-end-column="210" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Devices/ihone6.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="93" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1533,42 +1629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Devices/server-run1.sh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Devices/motog.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="136" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="136" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Devices/ihone6.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="205" selection-start-line="1" selection-start-column="205" selection-end-line="1" selection-end-column="205" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleinGrid.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        <state relative-caret-position="149">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding />
         </state>
       </provider>
