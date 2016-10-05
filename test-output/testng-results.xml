@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke" duration-ms="56974" started-at="2016-10-04T21:03:31Z" finished-at="2016-10-04T21:04:28Z">
+  <suite name="Smoke" duration-ms="56430" started-at="2016-10-05T21:59:57Z" finished-at="2016-10-05T22:00:54Z">
     <groups>
     </groups>
-    <test name="ipod" duration-ms="51981" started-at="2016-10-04T21:03:31Z" finished-at="2016-10-04T21:04:23Z">
+    <test name="moto-g" duration-ms="39856" started-at="2016-10-05T21:59:57Z" finished-at="2016-10-05T22:00:37Z">
       <class name="Tests.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTest@b684286]" name="beforeTest" is-config="true" duration-ms="26594" started-at="2016-10-04T17:03:31Z" finished-at="2016-10-04T17:03:57Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTest@6bdf28bb]" name="beforeTest" is-config="true" duration-ms="13111" started-at="2016-10-05T17:59:57Z" finished-at="2016-10-05T18:00:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[4735]]>
+                <![CDATA[4725]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[ipod]]>
+                <![CDATA[TA9190143I]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[iOS]]>
+                <![CDATA[Android]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[8.1.2]]>
+                <![CDATA[5.1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:Tests.LoginTest@b684286]" name="logintest" duration-ms="22766" started-at="2016-10-04T17:03:57Z" finished-at="2016-10-04T17:04:20Z">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:Tests.LoginTest@6bdf28bb]" name="logintest" duration-ms="24344" started-at="2016-10-05T18:00:10Z" finished-at="2016-10-05T18:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:Tests.LoginTest@b684286]" name="afterClass" is-config="true" duration-ms="2605" started-at="2016-10-04T17:04:20Z" finished-at="2016-10-04T17:04:23Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Tests.LoginTest@6bdf28bb]" name="afterClass" is-config="true" duration-ms="2388" started-at="2016-10-05T18:00:35Z" finished-at="2016-10-05T18:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- Tests.LoginTest -->
-    </test> <!-- ipod -->
-    <test name="iphone" duration-ms="56974" started-at="2016-10-04T21:03:31Z" finished-at="2016-10-04T21:04:28Z">
+    </test> <!-- moto-g -->
+    <test name="iphone" duration-ms="56430" started-at="2016-10-05T21:59:57Z" finished-at="2016-10-05T22:00:54Z">
       <class name="Tests.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTest@2f7c7260]" name="beforeTest" is-config="true" duration-ms="27943" started-at="2016-10-04T17:03:31Z" finished-at="2016-10-04T17:03:59Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTest@3f3afe78]" name="beforeTest" is-config="true" duration-ms="30725" started-at="2016-10-05T17:59:57Z" finished-at="2016-10-05T18:00:28Z">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:Tests.LoginTest@2f7c7260]" name="logintest" duration-ms="27300" started-at="2016-10-04T17:03:59Z" finished-at="2016-10-04T17:04:26Z">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:Tests.LoginTest@3f3afe78]" name="logintest" duration-ms="23185" started-at="2016-10-05T18:00:28Z" finished-at="2016-10-05T18:00:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:Tests.LoginTest@2f7c7260]" name="afterClass" is-config="true" duration-ms="1721" started-at="2016-10-04T17:04:26Z" finished-at="2016-10-04T17:04:28Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Tests.LoginTest@3f3afe78]" name="afterClass" is-config="true" duration-ms="2512" started-at="2016-10-05T18:00:51Z" finished-at="2016-10-05T18:00:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

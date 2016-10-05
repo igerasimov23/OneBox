@@ -7,6 +7,7 @@ public class LoginTest extends BaseTest {
 
    @Test
     public void logintest(){
-       app.loginPage.login("ewfew", "jefhe");
+       app.getLoginPage().login("ewfew", "jefhe");
+
    }
 }

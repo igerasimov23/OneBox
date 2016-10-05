@@ -1,16 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Smoke" verbose="1" parallel="tests" thread-count="5">
 
-        <!--<test name="moto-g">-->
-            <!--<classes>-->
-                <!--<class name="Tests.LoginTest" />-->
+        <test name="moto-g">
+            <classes>
+                <class name="Tests.LoginTest" />
 
-                <!--<parameter name="port" value="4725"></parameter>-->
-                <!--<parameter name="device" value="TA9190143I"></parameter>-->
-                <!--<parameter name="platform_name" value="Android"></parameter>-->
-                <!--<parameter name="platform_version" value="5.1"></parameter>-->
-            <!--</classes>-->
-        <!--</test>-->
+                <parameter name="port" value="4725"></parameter>
+                <parameter name="device" value="TA9190143I"></parameter>
+                <parameter name="platform_name" value="Android"></parameter>
+                <parameter name="platform_version" value="5.1"></parameter>
+            </classes>
+        </test>
 
     <test name="iphone">
         <classes>
@@ -23,16 +23,16 @@
         </classes>
     </test>
 
-    <test name="ipod">
-        <classes>
-            <class name="Tests.LoginTest" />
+    <!--<test name="ipod">-->
+        <!--<classes>-->
+            <!--<class name="Tests.LoginTest" />-->
 
-            <parameter name="port" value="4735"></parameter>
-            <parameter name="device" value="ipod"></parameter>
-            <parameter name="platform_name" value="iOS"></parameter>
-            <parameter name="platform_version" value="8.1.2"></parameter>
-        </classes>
-    </test>
+            <!--<parameter name="port" value="4735"></parameter>-->
+            <!--<parameter name="device" value="ipod"></parameter>-->
+            <!--<parameter name="platform_name" value="iOS"></parameter>-->
+            <!--<parameter name="platform_version" value="8.1.2"></parameter>-->
+        <!--</classes>-->
+    <!--</test>-->
 
         <!--<test name="GalaxyS7">-->
             <!--<classes>-->

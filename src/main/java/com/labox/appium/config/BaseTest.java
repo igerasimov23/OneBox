@@ -3,6 +3,7 @@ package com.labox.appium.config;
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
+import org.apache.commons.exec.ExecuteException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -12,7 +13,8 @@ import java.net.MalformedURLException;
 
 public abstract class BaseTest {
 
-    public ApplicationManager app;
+    protected ApplicationManager app;
+
 
     public static void startServer(){
 
@@ -51,31 +53,19 @@ public abstract class BaseTest {
 //        }
     }
 
-    public static void startNode1() {
-
-        CommandLine command = new CommandLine("cmd");
-        command.addArgument("/c");
-        command.addArgument("appium");
-        command.addArgument("--nodeconfig");
-        command.addArgument("Devices/motog.json");
-        command.addArgument("-p");
-        command.addArgument("4726");
-        command.addArgument("-U");
-        command.addArgument("TA9190143I");
-        command.addArgument("--log");
-        command.addArgument("Devices/motog.txt");
-
-        DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
-        DefaultExecutor executor = new DefaultExecutor();
-        executor.setExitValue(1);
-
+    public static void startMotog() {
+//       CreateNode createNode = new CreateNode();
+//       createNode.runScript("sh Devices/motog.sh");
+        CommandLine oCmdLine = CommandLine.parse("sh Devices/motog.sh");
+        DefaultExecutor oDefaultExecutor = new DefaultExecutor();
+        oDefaultExecutor.setExitValue(1);
         try {
-            executor.execute(command, resultHandler);
-            Thread.sleep(15000);
-        } catch (IOException e) {
+            oDefaultExecutor.execute(oCmdLine);
+        } catch (ExecuteException e) {
+            System.err.println("Execution failed.");
             e.printStackTrace();
-
-        } catch (InterruptedException e) {
+        } catch (IOException e) {
+            System.err.println("permission denied.");
             e.printStackTrace();
         }
 
@@ -113,7 +103,7 @@ public abstract class BaseTest {
         serverArguments.setArgument("--local-timezone", true);
         AppiumServer _appiumServer = new AppiumServer(serverArguments);*/
 //        AppiumServer _appiumServer = new AppiumServer(new File("C:/Users/Dell/appdata/Roaming/npm/node_modules/appium/build/lib/main.js"), serverArguments);
-//        _appiumServer.startNode1();
+//        _appiumServer.startMotog();
 //        _appiumServer.isServerRunning()
 //
 //        try {
@@ -123,33 +113,48 @@ public abstract class BaseTest {
 //        }
     }
 
-    public static void startNode2() {
+    public static void startIphone6() {
+//        CreateNode createNode = new CreateNode();
+//        createNode.runScript("sh Devices/iphone6.sh");
+//        CommandLine oCmdLine = CommandLine.parse("sh Devices/iphone6.sh");
+//        DefaultExecutor oDefaultExecutor = new DefaultExecutor();
+//        oDefaultExecutor.setExitValue(1);
+//        try {
+//            oDefaultExecutor.execute(oCmdLine);
+//        } catch (ExecuteException e) {
+//            System.err.println("Execution failed.");
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            System.err.println("permission denied.");
+//            e.printStackTrace();
+//        }
 
-        CommandLine command = new CommandLine("cmd");
-        command.addArgument("/c");
-        command.addArgument("appium");
-        command.addArgument("--nodeconfig");
-        command.addArgument("Devices/galaxys7.json");
-        command.addArgument("-p");
-        command.addArgument("4725");
-        command.addArgument("-U");
-        command.addArgument("e552347a");
-        command.addArgument("--log");
-        command.addArgument("Devices/galaxys7.txt");
 
-        DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
-        DefaultExecutor executor = new DefaultExecutor();
-        executor.setExitValue(1);
-
-        try {
-            executor.execute(command, resultHandler);
-            Thread.sleep(15000);
-        } catch (IOException e) {
-            e.printStackTrace();
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        CommandLine command = new CommandLine("cmd");
+//        command.addArgument("/c");
+//        command.addArgument("appium");
+//        command.addArgument("--nodeconfig");
+//        command.addArgument("Devices/galaxys7.json");
+//        command.addArgument("-p");
+//        command.addArgument("4725");
+//        command.addArgument("-U");
+//        command.addArgument("e552347a");
+//        command.addArgument("--log");
+//        command.addArgument("Devices/galaxys7.txt");
+//
+//        DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
+//        DefaultExecutor executor = new DefaultExecutor();
+//        executor.setExitValue(1);
+//
+//        try {
+//            executor.execute(command, resultHandler);
+//            Thread.sleep(15000);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public static void stopNode() throws IOException {
@@ -172,14 +177,14 @@ public abstract class BaseTest {
     public  void beforeTest(String port, String device,
                                   String platform_name, String platform_version) throws MalformedURLException {
 //        startServer();
-//        startNode1();
-//        startNode2();
+//        startMotog();
+
         app = new ApplicationManager(port, device,
                 platform_name,  platform_version);
     }
 
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public  void afterClass() throws IOException {
 //        app.driver.quit();
 //        stopNode();

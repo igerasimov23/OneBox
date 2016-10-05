@@ -9,25 +9,30 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 
 public class ApplicationManager {
-    public AppiumDriver<MobileElement> driver;
-    public LoginPage loginPage;
-    public HelperBase helperBase;
-    public String device;
-    public String platform_name;
-    public String platform_version;
+    private AppiumDriver<MobileElement> driver;
+    private LoginPage loginPage;
+    private HelperBase helperBase;
+    private Navigation navigation;
+    private String device;
+    private String platform_name;
+    private String platform_version;
 
-    public  DesiredCapabilities capabilities;
-    public  DesiredCapabilities capabilities1;
+    private   DesiredCapabilities capIos;
+    private   DesiredCapabilities capAndr;
 
 
 
-    public ApplicationManager(String port,String device,
+
+     protected ApplicationManager(String port, String device,
                               String platform_name, String platform_version) throws MalformedURLException {
 
         this.device = device;
@@ -35,39 +40,43 @@ public class ApplicationManager {
         this.platform_version = platform_version;
 
 
-        String fileLocationAndr = "/Users/ilyagerasimov/Downloads/optimum4.6.0.1_arm_stg2.apk";
-        String fileLocationIos = "/Users/ilyagerasimov/builds/LaBoxApp.app";
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileInputStream("src/main/resources/config.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        String fileLocationAndr = properties.getProperty("fileAndroid");
+        String fileLocationIos = properties.getProperty("fileIOS");
 
         File andrPath = new File(fileLocationAndr);
         File iosPath = new File(fileLocationIos);
 
-
-//        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
-//        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
-//        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
-
         if(platform_name.equalsIgnoreCase("iOS")){
-            capabilities = new DesiredCapabilities();
+            capIos = new DesiredCapabilities();
             System.out.println("ios: " + platform_name + " " + device + " " + platform_version);
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
-            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
-            capabilities.setCapability(MobileCapabilityType.APP, iosPath.getAbsolutePath());
+            capIos.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
+            capIos.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
+            capIos.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+            capIos.setCapability(MobileCapabilityType.APP, iosPath.getAbsolutePath());
             System.out.println(iosPath.getAbsolutePath());
-            driver = new IOSDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities);
+            driver = new IOSDriver<>(new URL("http://localhost:" + port+ "/wd/hub"), capIos);
 
         }
         else if (platform_name.equalsIgnoreCase("android")){
-            capabilities1 = new DesiredCapabilities();
+            capAndr = new DesiredCapabilities();
             System.out.println("android: " + platform_name + " " + device + " " + platform_version);
-            capabilities1.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
-            capabilities1.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
-            capabilities1.setCapability(MobileCapabilityType.DEVICE_NAME, device);
-            capabilities1.setCapability(MobileCapabilityType.APP, andrPath.getAbsolutePath());
-        capabilities1.setCapability("appPackage", "com.optimum.rdvr.mobile");
+            capAndr.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
+            capAndr.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
+            capAndr.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+            capAndr.setCapability(MobileCapabilityType.APP, andrPath.getAbsolutePath());
+        capAndr.setCapability("appPackage", "com.altice.labox");
 //        //Activity to open Log In screen for Android
-        capabilities1.setCapability("appActivity", "com.cablevision.optimum2.utility.SplashScreen");
-            driver = new AndroidDriver<>(new URL("http://localhost:4444/wd/hub"), capabilities1);
+        capAndr.setCapability("appActivity", "com.altice.labox.splashscreen.presentation.SplashActivity");
+
+            driver = new AndroidDriver<>(new URL("http://localhost:" + port + "/wd/hub"), capAndr);
 
         }
 //
@@ -77,21 +86,42 @@ public class ApplicationManager {
 
 
         /*String fileLocation = "C:/cablevision/optimum4.6.0.1_arm_stg2.apk";
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "phone");
-        capabilities.setCapability("app", fileLocation);
-        capabilities.setCapability("appPackage", "com.optimum.rdvr.mobile");
+        DesiredCapabilities capIos = new DesiredCapabilities();
+        capIos.setCapability("deviceName", "phone");
+        capIos.setCapability("app", fileLocation);
+        capIos.setCapability("appPackage", "com.optimum.rdvr.mobile");
         //Activity to open Log In screen for Android
-        capabilities.setCapability("appActivity", "com.cablevision.optimum2.utility.SplashScreen");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);*/
+        capIos.setCapability("appActivity", "com.cablevision.optimum2.utility.SplashScreen");
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capIos);*/
 
 
 //        page init
 
 
-        loginPage = new LoginPage(this);
-        helperBase = new HelperBase(this);
+//        loginPage = new LoginPage(this);
+//        helperBase = new HelperBase(this);
 
+    }
+
+    public LoginPage getLoginPage() {
+        if (loginPage == null)
+            loginPage = new LoginPage(this);
+        return loginPage;
+    }
+
+    public HelperBase getHelperBase(){
+        if (helperBase == null)
+            helperBase = new HelperBase(this);
+        return helperBase;
+    }
+
+    public Navigation getNavigation(){
+        if(navigation == null)
+            navigation = new Navigation(this);
+        return navigation;
+    }
+    public AppiumDriver<MobileElement> getDriver() {
+        return driver;
     }
 
     public void exit(){
