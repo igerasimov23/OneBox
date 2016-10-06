@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b814d33d-bfd3-43ae-9c4a-1c7a7890bc54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/CreateNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/Navigation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/motog.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Devices/ihone6.sh" afterPath="$PROJECT_DIR$/Devices/iphone6.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/labox/appium/config/ApplicationManager.class" afterPath="$PROJECT_DIR$/target/classes/com/labox/appium/config/ApplicationManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/labox/appium/config/BaseTest.class" afterPath="$PROJECT_DIR$/target/classes/com/labox/appium/config/BaseTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/labox/appium/config/HelperBase.class" afterPath="$PROJECT_DIR$/target/classes/com/labox/appium/config/HelperBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/labox/appium/pages/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/com/labox/appium/pages/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Tests/LoginTest.class" afterPath="$PROJECT_DIR$/target/test-classes/Tests/LoginTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleinGrid.xml" afterPath="$PROJECT_DIR$/SeleinGrid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/ApplicationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/BaseTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/BaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/HelperBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/config/HelperBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/labox/appium/pages/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/iphone.html" afterPath="$PROJECT_DIR$/test-output/Smoke/iphone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/iphone.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/iphone.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/ipod.html" afterPath="$PROJECT_DIR$/test-output/Smoke/ipod.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/ipod.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/ipod.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/moto-g.html" afterPath="$PROJECT_DIR$/test-output/Smoke/moto-g.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/moto-g.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/moto-g.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/Smoke/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/Smoke/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/index.html" afterPath="$PROJECT_DIR$/test-output/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-Tests.LoginTest.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-Tests.LoginTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/iphone.properties" afterPath="$PROJECT_DIR$/test-output/old/Smoke/iphone.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/ipod.properties" afterPath="$PROJECT_DIR$/test-output/old/Smoke/ipod.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/methods-alphabetical.html" afterPath="$PROJECT_DIR$/test-output/old/Smoke/methods-alphabetical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/methods.html" afterPath="$PROJECT_DIR$/test-output/old/Smoke/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/moto-g.properties" afterPath="$PROJECT_DIR$/test-output/old/Smoke/moto-g.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/testng.xml.html" afterPath="$PROJECT_DIR$/test-output/old/Smoke/testng.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/Smoke/toc.html" afterPath="$PROJECT_DIR$/test-output/old/Smoke/toc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-results.xml" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" />
-    </list>
+    <list default="true" id="b814d33d-bfd3-43ae-9c4a-1c7a7890bc54" name="Default" comment="" />
     <ignored path="OneBoxAppium.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -404,96 +367,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OneBoxAppium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OneBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OneBoxAppium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OneBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OneBoxAppium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OneBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1231,7 +1104,7 @@
       <workItem from="1475509050686" duration="730000" />
       <workItem from="1475589621731" duration="1141000" />
       <workItem from="1475591043418" duration="163000" />
-      <workItem from="1475591266757" duration="35938000" />
+      <workItem from="1475591266757" duration="36257000" />
     </task>
     <servers />
   </component>
@@ -1268,11 +1141,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121608000" />
+    <option name="totallyTimeSpent" value="121927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1286,7 +1159,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
